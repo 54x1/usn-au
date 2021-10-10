@@ -3,16 +3,16 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import logo from './logo.svg'
 import './App.css'
 import './App.scss'
-import Register from 'pages/Register/Register'
-import Login from 'pages/Login/Login'
-import Error from 'pages/Error/Error'
-import UserProfile from 'pages/UserProfile/UserProfile'
-import UniProfile from 'pages/UniProfile/UniProfile'
-import Club from 'pages/Club/Club'
-import StudyGroup from 'pages/StudyGroup/StudyGroup'
-import Market from 'pages/Market/Market'
-import Settings from 'pages/Settings/Settings'
-import Messenger from 'pages/Messenger/Messenger'
+import Register from '../pages/Register/Register'
+import Login from '../pages/Login/Login'
+import Error from '../pages/Error/Error'
+import UserProfile from '../pages/UserProfile/UserProfile'
+import UniProfile from '../pages/UniProfile/UniProfile'
+import Club from '../pages/Club/Club'
+import StudyGroup from '../pages/StudyGroup/StudyGroup'
+import Market from '../pages/Market/Market'
+import Settings from '../pages/Settings/Settings'
+import Messenger from '../pages/Messenger/Messenger'
 
 import {
   Alert,
@@ -22,7 +22,7 @@ import {
   Snackbar,
 } from '@mui/material'
 import { ThemeProvider } from '@emotion/react'
-import Home from 'pages/Home/Home'
+import Home from '../pages/Home/Home'
 
 const custom_theme = createTheme({
   palette: {
