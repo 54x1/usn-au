@@ -187,7 +187,7 @@ class App extends Component {
     </Snackbar>
   </div>
 }
-)}}
+)}
 
   // constructor(props) {
   //   super(props)
