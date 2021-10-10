@@ -3,16 +3,16 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import logo from './logo.svg'
 import './App.css'
 import './App.scss'
-import Register from '/lambda/pages/Register/Register'
-import Login from '/lambda/pages/Login/Login'
-import Error from '/lambda/pages/Error/Error'
-import UserProfile from '/lambda/pages/UserProfile/UserProfile'
-import UniProfile from '/lambda/pages/UniProfile/UniProfile'
-import Club from '/lambda/pages/Club/Club'
-import StudyGroup from '/lambda/pages/StudyGroup/StudyGroup'
-import Market from '/lambda/pages/Market/Market'
-import Settings from '/lambda/pages/Settings/Settings'
-import Messenger from '/lambda/pages/Messenger/Messenger'
+import Register from './pages/Register/Register'
+import Login from './pages/Login/Login'
+import Error from './pages/Error/Error'
+import UserProfile from './pages/UserProfile/UserProfile'
+import UniProfile from './pages/UniProfile/UniProfile'
+import Club from './pages/Club/Club'
+import StudyGroup from './pages/StudyGroup/StudyGroup'
+import Market from './pages/Market/Market'
+import Settings from './pages/Settings/Settings'
+import Messenger from './pages/Messenger/Messenger'
 import {
   Alert,
   Backdrop,
@@ -21,7 +21,7 @@ import {
   Snackbar,
 } from '@mui/material'
 import { ThemeProvider } from '@emotion/react'
-import Home from '/lambda/pages/Home/Home'
+import Home from './pages/Home/Home'
 
 const custom_theme = createTheme({
   palette: {
@@ -207,8 +207,8 @@ class App extends Component {
   //
   //   return (
   //     <p>
-  //       <button onClick={this.handleClick("hello")}>{loading ? "Loading..." : "Call /lambda"}</button>
-  //       <button onClick={this.handleClick("async-dadjoke")}>{loading ? "Loading..." : "Call Async /lambda"}</button>
+  //       <button onClick={this.handleClick("hello")}>{loading ? "Loading..." : "Call ."}</button>
+  //       <button onClick={this.handleClick("async-dadjoke")}>{loading ? "Loading..." : "Call Async ."}</button>
   //       <br />
   //       <span>{msg}</span>
   //     <p>
