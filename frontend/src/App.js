@@ -21,12 +21,7 @@ import {
 } from '@mui/material'
 import { ThemeProvider } from '@emotion/react'
 import Home from './pages/Home/Home'
-const [circle, setCircle] = useState(false)
-const [snackbar, setSnackbar] = useState({
-  show: false,
-  severity: 'error',
-  text: 'helloo',
-})
+
 const custom_theme = createTheme({
   palette: {
     primary: {
@@ -38,9 +33,15 @@ const custom_theme = createTheme({
   },
 })
 
-class App extends Component {
 
+function App() {
 
+  const [circle, setCircle] = useState(false)
+  const [snackbar, setSnackbar] = useState({
+    show: false,
+    severity: 'error',
+    text: 'helloo',
+  })
 
     return(
       // <>
@@ -190,7 +191,8 @@ class App extends Component {
   </div>
   // </>
 // }
-)}
+)
+}
 
   // constructor(props) {
   //   super(props)
