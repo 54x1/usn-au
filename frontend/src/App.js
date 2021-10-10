@@ -4,15 +4,15 @@ import logo from './logo.svg'
 import './App.css'
 import './App.scss'
 import Register from 'src/pages/Register/Register'
-import Login from 'pages/Login/Login'
-import Error from 'pages/Error/Error'
-import UserProfile from 'pages/UserProfile/UserProfile'
-import UniProfile from 'pages/UniProfile/UniProfile'
-import Club from 'pages/Club/Club'
-import StudyGroup from 'pages/StudyGroup/StudyGroup'
-import Market from 'pages/Market/Market'
-import Settings from 'pages/Settings/Settings'
-import Messenger from 'pages/Messenger/Messenger'
+import Login from 'src/pages/Login/Login'
+import Error from 'src/src/pages/Error/Error'
+import UserProfile from 'src/pages/UserProfile/UserProfile'
+import UniProfile from 'src/pages/UniProfile/UniProfile'
+import Club from 'src/pages/Club/Club'
+import StudyGroup from 'src/pages/StudyGroup/StudyGroup'
+import Market from 'src/pages/Market/Market'
+import Settings from 'src/pages/Settings/Settings'
+import Messenger from 'src/pages/Messenger/Messenger'
 
 import {
   Alert,
@@ -22,7 +22,7 @@ import {
   Snackbar,
 } from '@mui/material'
 import { ThemeProvider } from '@emotion/react'
-import Home from 'pages/Home/Home'
+import Home from 'src/pages/Home/Home'
 const [circle, setCircle] = useState(false)
 const [snackbar, setSnackbar] = useState({
   show: false,
@@ -71,10 +71,6 @@ class LambdaDemo extends Component {
 
 class App extends Component {
   render() {
-
-
-
-
   return (
     <div className='App'>
       <ThemeProvider theme={custom_theme} className='container'>
