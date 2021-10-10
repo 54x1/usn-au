@@ -43,7 +43,7 @@ class App extends Component {
 
 
     return(
-      <>
+      // <>
         // render() {
 
   <div className='App'>
@@ -188,7 +188,7 @@ class App extends Component {
       </Alert>
     </Snackbar>
   </div>
-  </>
+  // </>
 // }
 )}
 
