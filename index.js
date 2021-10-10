@@ -108,9 +108,9 @@ app.use("/api/course", courseRoute);
 app.use("/api/faculty", facultyRoute);
 
 console.log("__dirname",__dirname)
-app.use(express.static(path.join(__dirname, "/public/build")))
+app.use(express.static(path.join(__dirname, "/frontend/build")))
 
-console.log("__dirname2",path.join(__dirname, './public/build', 'index.html'))
+console.log("__dirname2",path.join(__dirname, './frontend/build', 'index.html'))
 app.get('*', (req, res) => {
 res.sendFile(path.join(__dirname, './public/build', 'index.html'))
 })
