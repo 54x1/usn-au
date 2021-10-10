@@ -36,14 +36,15 @@ const custom_theme = createTheme({
 class App extends Component {
 
 
-    const [circle, setCircle] = useState(false)
-    const [snackbar, setSnackbar] = useState({
-      show: false,
-      severity: 'error',
-      text: 'helloo',
-    })
+
     return(
         render() {
+          const [circle, setCircle] = useState(false)
+          const [snackbar, setSnackbar] = useState({
+            show: false,
+            severity: 'error',
+            text: 'helloo',
+          })
   <div className='App'>
     <ThemeProvider theme={custom_theme} className='container'>
       <Router>
