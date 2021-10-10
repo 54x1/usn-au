@@ -3,16 +3,16 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import logo from './logo.svg'
 import './App.css'
 import './App.scss'
-import Register from './src/pages/Register/Register'
-import Login from './src/pages/Login/Login'
-import Error from './src/pages/Error/Error'
-import UserProfile from './src/pages/UserProfile/UserProfile'
-import UniProfile from './src/pages/UniProfile/UniProfile'
-import Club from './src/pages/Club/Club'
-import StudyGroup from './src/pages/StudyGroup/StudyGroup'
-import Market from './src/pages/Market/Market'
-import Settings from './src/pages/Settings/Settings'
-import Messenger from './src/pages/Messenger/Messenger'
+import Register from '/lambda/pages/Register/Register'
+import Login from 'lambda/pages/Login/Login'
+import Error from 'lambda/pages/Error/Error'
+import UserProfile from 'lambda/pages/UserProfile/UserProfile'
+import UniProfile from 'lambda/pages/UniProfile/UniProfile'
+import Club from 'lambda/pages/Club/Club'
+import StudyGroup from 'lambda/pages/StudyGroup/StudyGroup'
+import Market from 'lambda/pages/Market/Market'
+import Settings from 'lambda/pages/Settings/Settings'
+import Messenger from 'lambda/pages/Messenger/Messenger'
 import {
   Alert,
   Backdrop,
@@ -21,7 +21,7 @@ import {
   Snackbar,
 } from '@mui/material'
 import { ThemeProvider } from '@emotion/react'
-import Home from './src/pages/Home/Home'
+import Home from 'lambda/pages/Home/Home'
 
 const custom_theme = createTheme({
   palette: {
