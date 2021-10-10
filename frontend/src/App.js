@@ -70,7 +70,7 @@ class LambdaDemo extends Component {
 }
 
 class App extends Component {
-  render() {
+  // render() {
   // return (
     <div className='App'>
       <ThemeProvider theme={custom_theme} className='container'>
@@ -215,7 +215,7 @@ class App extends Component {
       </Snackbar>
     </div>
   // )
-}
+// }
 }
 
 export default App
