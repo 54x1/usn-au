@@ -1,8 +1,8 @@
 import React, { useState, Component } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import logo from "./logo.svg"
-import "./App.css"
-import "./App.scss"
+import logo from './logo.svg'
+import './App.css'
+import './App.scss'
 import Register from './pages/Register/Register'
 import Login from './pages/Login/Login'
 import Error from './pages/Error/Error'
@@ -64,7 +64,8 @@ class LambdaDemo extends Component {
   }
 }
 
-function App() {
+class App extends Component {
+  render() {
 
   const [circle, setCircle] = useState(false)
   const [snackbar, setSnackbar] = useState({
@@ -218,6 +219,8 @@ function App() {
       </Snackbar>
     </div>
   )
+}
+}
 }
 
 export default App
